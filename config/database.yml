@@ -1,0 +1,28 @@
+base: &base
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  reconnect: true
+  database: postrb
+  username: hci
+  password: "lol"
+
+development:
+  <<: *base  
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  database: postrb_test
+  <<: *base
+
+cucumber:
+  <<: *test
+
+staging:
+  <<: *base
+
+production:
+  <<: *base

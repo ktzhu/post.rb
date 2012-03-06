@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rating: 1
+  start: 2012-03-05
+  end: 2012-03-05
+  atmosphere: MyText
+  skills: MyText
+  duties: MyText
+
+two:
+  rating: 1
+  start: 2012-03-05
+  end: 2012-03-05
+  atmosphere: MyText
+  skills: MyText
+  duties: MyText
