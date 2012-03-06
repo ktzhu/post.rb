@@ -4,6 +4,12 @@ class JobsController < ApplicationController
   def home
   end
 
+  def review
+  end
+
+  def about
+  end
+
   def index
     @jobs = Job.all
   end

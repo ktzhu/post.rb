@@ -2,6 +2,10 @@ Post::Application.routes.draw do
   root :to => "jobs#home"
   get "admin" => "admin#index"
   get "submit" => "jobs#review"
+  get "about" => "jobs#about"
+  get "favs" => "users#favs"
+  get "account" => "users#show"
+
 
   resources :jobs do
     resources :reviews

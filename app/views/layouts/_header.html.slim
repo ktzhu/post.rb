@@ -8,8 +8,12 @@
 .nav
   ul
     li = link_to "Home", root_path
+    li = link_to "Browse", jobs_path
+    li = link_to "Submit", submit_url 
+    li = link_to "About", about_url
+    li 
+      a href="#" Your Account
     - if signed_in?
       li = link_to "Sign Out", logout_path, :method => :delete
-      = button_to "Sign Out", root_path, :confirm => "You wanna sign out?", :method => :delete, :class=> :destroy
     - else
       li = link_to "Sign In", login_path
