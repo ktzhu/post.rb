@@ -8,6 +8,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @reviews = Review.find_by_job_id(params[:id])
+    @new_review = @job.reviews.build
   end
 
   def new

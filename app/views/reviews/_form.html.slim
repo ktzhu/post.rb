@@ -1,10 +1,32 @@
-= @job.name
-= form_tag reviews_url do
+= form_for(@review) do |f|
+  - if @review.errors.any?
+    strong = pluralize(@review.errors.count, "error") + " -- could not save your review."
+    ul
+      - @review.errors.full_messages.each do |msg|
+        li = msg
+
+
   fieldset#newReview
     .field
-      label for="review"
-        Review your job
-      textarea rows="7" cols="40" name="review[skills]"
-      
-      input type="submit" value="Submit"
-
+      = f.label :rating
+      = f.text_field :rating
+    .field
+      = f.label :start_date
+      = f.text_field :start
+    .field
+      = f.label :end_date
+      = f.text_field :end
+    .field
+      = f.label :atmosphere
+      = f.text_area(:atmosphere, :size => "20x3")
+    .field
+      = f.label :skills
+      = f.text_area(:skills, :size => "20x3")
+    .field
+      = f.label :duties
+      = f.text_area(:duties, :size => "20x3")
+    .field
+      = f.label :eval
+      = f.text_area(:eval, :size => "20x10")
+    .actions
+      = f.submit

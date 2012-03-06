@@ -4,4 +4,8 @@ class Review < ActiveRecord::Base
  belongs_to :user
 
  attr_accessible :rating, :start, :end, :atmosphere, :skills, :duties, :eval
+
+  def user=(user)
+    self.user_id = user.id
+  end
 end

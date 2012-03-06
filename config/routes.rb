@@ -2,9 +2,10 @@ Post::Application.routes.draw do
   root :to => "jobs#index"
   get "admin" => "admin#index"
 
-  resources :jobs
+  resources :jobs do
+    resources :reviews
+  end
   resources :users
-  resources :reviews
 
   controller :sessions do
     get 'login' => :new

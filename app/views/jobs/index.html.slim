@@ -3,6 +3,7 @@ h3 Put this in your pipe
 em and smoke it
 
 - @jobs.each do |job|
-	h2 = job.name
-
+  h2 = job.name
+  = link_to "Show", job
 a href="/login" Login
+/ = button_to "Add Review", reviews_path(:job_id => job)

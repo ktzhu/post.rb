@@ -17,10 +17,10 @@ class ReviewsController < ApplicationController
 
   def create
     @job = Job.find(params[:job_id])
-    @review = Review.new(params[:review])
-    # @review.job = @job
+    @review = @job.reviews.create(params[:review])
     if @review.save
-      redirect_to(job_url(@job), :notice => "Successfully submitted job review.")
+      # redirect_to(job_url(@job), :notice => "Successfully submitted job review.")
+      redirect_to(job_path(@job), :notice => "Successfully submitted job review.")
     else
       render :action => "new"
     end
