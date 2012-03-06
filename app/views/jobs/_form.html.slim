@@ -1,0 +1,41 @@
+= form_for(@job) do |f|
+  - if @job.errors.any?
+    strong = pluralize(@job.errors.count, "error") + " -- could not save your job."
+    ul
+      - @job.errors.full_messages.each do |msg|
+        li = msg
+	
+  fieldset#newJob
+    .field
+      = f.label :job_title
+      = f.text_field :name
+
+    .field
+      = f.label :company
+      = f.text_field :company
+
+    .field
+      = f.fields_for :reviews do |builder|
+        = builder.label :rating
+        = builder.text_field :rating
+
+        = builder.label :start
+        = builder.text_field :start
+
+        = builder.label :end
+        = builder.text_field :end
+
+        = builder.label :atmosphere
+        = builder.text_area :atmosphere, :rows => 4
+
+        = builder.label :skills
+        = builder.text_area :skills, :rows => 4
+
+        = builder.label :duties
+        = builder.text_area :duties, :rows => 4
+
+        = builder.label :eval
+        = builder.text_area :eval, :rows => 4
+
+    .actions
+      = f.submit

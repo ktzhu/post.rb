@@ -1,0 +1,10 @@
+= @job.name
+= form_tag reviews_url do
+  fieldset#newReview
+    .field
+      label for="review"
+        Review your job
+      textarea rows="7" cols="40" name="review[skills]"
+      
+      input type="submit" value="Submit"
+

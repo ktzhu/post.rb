@@ -1,4 +1,17 @@
 Post::Application.routes.draw do
+  root :to => "jobs#index"
+  get "admin" => "admin#index"
+
+  resources :jobs
+  resources :users
+  resources :reviews
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

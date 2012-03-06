@@ -1,0 +1,10 @@
+h1 That shit cray
+h2 = "Job Details for #{@job.name} at #{@job.company}"
+- if notice
+	= notice
+
+em = @job.name
+em = @job.company
+em = @job.reviews.count
+
+= link_to "Add review", new_review_path 

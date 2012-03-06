@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   attr_accessor :password_confirmation
   attr_reader :password
 
-  has_many_and_belongs_to_many :jobs
+  has_and_belongs_to_many :jobs
   has_many :reviews
 
   validate :password_must_be_present

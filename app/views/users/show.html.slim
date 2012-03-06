@@ -1,0 +1,13 @@
+- if notice
+	= notice
+
+strong Name:
+= @user.name
+
+p
+
+strong Password (jk you can't really see it)
+= @user.hashed_password
+
+= link_to "Edit", edit_user_path(@user)
+= link_to "Back", users_path

@@ -1,0 +1,13 @@
+h1 Userszszszszsz
+
+- if notice
+	= notice
+
+= link_to "Add someone to the club", new_user_path
+p
+- @users.each do |user|
+	.label 	= user.name
+	.actions 
+		= link_to "Show", user
+		= link_to "Edit", edit_user_path(user)
+		= button_to "Delete this user", user, :confirm => "No but really?", :method => :delete, :class => :destroy
