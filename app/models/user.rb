@@ -19,6 +19,11 @@ class User < ActiveRecord::Base
     end
   end
 
+  def self.authenticate_with_salt(id, cookie_salt)
+    user = find_by_id(id)
+    (user && user.salt == cookie_salt) ? user : nil
+  end
+
   def User.encrypt_password(password, salt)
     Digest::SHA2.hexdigest(password + "lulz" + salt)
   end

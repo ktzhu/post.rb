@@ -1,6 +1,7 @@
 Post::Application.routes.draw do
-  root :to => "jobs#index"
+  root :to => "jobs#home"
   get "admin" => "admin#index"
+  get "submit" => "jobs#review"
 
   resources :jobs do
     resources :reviews
@@ -10,7 +11,8 @@ Post::Application.routes.draw do
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
-    delete 'logout' => :destroy
+    # delete 'logout' => :destroy
+    match '/logout', :to => 'sessions#destroy'
   end
 
   # The priority is based upon order of creation:

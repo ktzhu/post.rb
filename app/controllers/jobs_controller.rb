@@ -1,5 +1,8 @@
 class JobsController < ApplicationController
-  before_filter :authorize, :except => [:index, :show]
+  before_filter :authorize, :except => [:index, :home]
+
+  def home
+  end
 
   def index
     @jobs = Job.all
