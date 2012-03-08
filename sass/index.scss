@@ -1,9 +1,32 @@
 @import 'header';
+.back {
+  font-family: $sans-font;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: $darkgreen;
+  width: 210px;
+  position: absolute;
+  left: 900px;
+  top: 60px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  @include border-radius(5px); 
+  @include single-box-shadow;
+  padding-top: 1px;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
 
 .main-content {
   display: block;
   position: relative;
   top: 30px;
+  left: 300px;
   margin: 0 auto;
   width: 80%;
   font-family: $sans-font;
@@ -49,6 +72,15 @@
   }
 }
 
+h4 {
+  width: 450px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: $darkgrey;
+  margin-left: 20px;
+}
+
 .content {
   display: block;
   position: relative;
@@ -58,6 +90,14 @@
   font-family: $sans-font;
   font-size: 0.9em;
   color: $darkgrey;
+
+  .intro {
+    width: 600px;
+    position: relative;
+    left: -108px;
+    margin: 0 auto;
+    display: block;
+  }
 
   .blurb {
     margin-bottom: 5px;
@@ -123,9 +163,10 @@
 .woo {
   position: absolute;
   z-index: -1;
-  top: 110px;
+  top: 132px;
   img {
-    height: 310px;
+    height: 320px;
+    width: 670px;
   }
   left: -82px;
 }
@@ -150,7 +191,9 @@
 }
 
 h1 {
+  color: $darkgreen;
   font-family: $serif-font;
+  font-size: 28px;
   text-transform: lowercase;
 }
 

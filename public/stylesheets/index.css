@@ -33,7 +33,7 @@ body {
 .nav ul {
   display: inline-block;
   padding: 0px;
-  margin-left: 20px;
+  margin-left: 550px;
   margin-top: 0;
 }
 /* line 26, ../../sass/_header.scss */
@@ -58,7 +58,8 @@ body {
 }
 /* line 46, ../../sass/_header.scss */
 .nav .branding {
-  float: left;
+  position: relative;
+  left: 500px;
   margin-top: 2px;
   font-size: 1.8em;
   font-family: "Arvo", serif;
@@ -69,11 +70,45 @@ body {
   color: #2a7357;
 }
 
-/* line 3, ../../sass/index.scss */
+/* line 2, ../../sass/index.scss */
+.back {
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #2a7357;
+  width: 210px;
+  position: absolute;
+  left: 900px;
+  top: 60px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  padding-top: 1px;
+  text-align: center;
+}
+/* line 19, ../../sass/index.scss */
+.back a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 25, ../../sass/index.scss */
 .main-content {
   display: block;
   position: relative;
   top: 30px;
+  left: 300px;
   margin: 0 auto;
   width: 80%;
   font-family: "Lato", sans-serif;
@@ -81,7 +116,7 @@ body {
   color: #4c4642;
 }
 
-/* line 14, ../../sass/index.scss */
+/* line 37, ../../sass/index.scss */
 .small-button2 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -104,13 +139,13 @@ body {
   padding-top: 1px;
   text-align: center;
 }
-/* line 27, ../../sass/index.scss */
+/* line 50, ../../sass/index.scss */
 .small-button2 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 33, ../../sass/index.scss */
+/* line 56, ../../sass/index.scss */
 .small-button {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -133,13 +168,23 @@ body {
   padding-top: 1px;
   text-align: center;
 }
-/* line 46, ../../sass/index.scss */
+/* line 69, ../../sass/index.scss */
 .small-button a {
   color: white;
   text-decoration: none;
 }
 
-/* line 52, ../../sass/index.scss */
+/* line 75, ../../sass/index.scss */
+h4 {
+  width: 450px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: #4c4642;
+  margin-left: 20px;
+}
+
+/* line 84, ../../sass/index.scss */
 .content {
   display: block;
   position: relative;
@@ -150,23 +195,31 @@ body {
   font-size: 0.9em;
   color: #4c4642;
 }
-/* line 62, ../../sass/index.scss */
+/* line 94, ../../sass/index.scss */
+.content .intro {
+  width: 600px;
+  position: relative;
+  left: -108px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 102, ../../sass/index.scss */
 .content .blurb {
   margin-bottom: 5px;
   font-size: 1.2em;
   color: #363636;
 }
-/* line 66, ../../sass/index.scss */
+/* line 106, ../../sass/index.scss */
 .content .blurb span {
   color: #2a7357;
   text-transform: uppercase;
   size: 1.2em;
 }
-/* line 73, ../../sass/index.scss */
+/* line 113, ../../sass/index.scss */
 .content .actions {
   padding-left: 20px;
 }
-/* line 75, ../../sass/index.scss */
+/* line 115, ../../sass/index.scss */
 .content .actions .button {
   display: block;
   height: 23px;
@@ -186,21 +239,21 @@ body {
   text-align: center;
   padding-top: 7px;
 }
-/* line 85, ../../sass/index.scss */
+/* line 125, ../../sass/index.scss */
 .content .actions .button a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
 }
 
-/* line 94, ../../sass/index.scss */
+/* line 134, ../../sass/index.scss */
 .submission {
   margin-top: 20px;
   border-top: 1px dotted #4c4642;
   width: 400px;
 }
 
-/* line 100, ../../sass/index.scss */
+/* line 140, ../../sass/index.scss */
 .title {
   display: inline;
   font-family: "Arvo", serif;
@@ -209,18 +262,18 @@ body {
   font-weight: bold;
 }
 
-/* line 108, ../../sass/index.scss */
+/* line 148, ../../sass/index.scss */
 .rating {
   position: relative;
   top: 5px;
   display: inline-block;
 }
-/* line 109, ../../sass/index.scss */
+/* line 149, ../../sass/index.scss */
 .rating img {
   width: 77px;
 }
 
-/* line 115, ../../sass/index.scss */
+/* line 155, ../../sass/index.scss */
 .company {
   size: 1.2em;
   display: inline;
@@ -229,31 +282,32 @@ body {
   size: 0.8em;
 }
 
-/* line 123, ../../sass/index.scss */
+/* line 163, ../../sass/index.scss */
 .woo {
   position: absolute;
   z-index: -1;
-  top: 110px;
+  top: 132px;
   left: -82px;
 }
-/* line 127, ../../sass/index.scss */
+/* line 167, ../../sass/index.scss */
 .woo img {
-  height: 310px;
+  height: 320px;
+  width: 670px;
 }
 
-/* line 133, ../../sass/index.scss */
+/* line 174, ../../sass/index.scss */
 .block {
   display: block;
   margin-bottom: 20px;
 }
-/* line 136, ../../sass/index.scss */
+/* line 177, ../../sass/index.scss */
 .block .title {
   display: inline;
   font-family: "Arvo", serif;
   text-transform: lowercase;
   font-size: 1.6em;
 }
-/* line 143, ../../sass/index.scss */
+/* line 184, ../../sass/index.scss */
 .block .company {
   size: 1em;
   display: inline;
@@ -262,24 +316,26 @@ body {
   size: 0.8em;
 }
 
-/* line 152, ../../sass/index.scss */
+/* line 193, ../../sass/index.scss */
 h1 {
+  color: #2a7357;
   font-family: "Arvo", serif;
+  font-size: 28px;
   text-transform: lowercase;
 }
 
-/* line 157, ../../sass/index.scss */
+/* line 200, ../../sass/index.scss */
 h2 {
   font-family: "Cutive", serif;
 }
 
-/* line 161, ../../sass/index.scss */
+/* line 204, ../../sass/index.scss */
 h3 {
   font-family: "Lato", sans-serif;
   size: 1.2em;
 }
 
-/* line 166, ../../sass/index.scss */
+/* line 209, ../../sass/index.scss */
 .wrapper {
   display: block;
   position: relative;
