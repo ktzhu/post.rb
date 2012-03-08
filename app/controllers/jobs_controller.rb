@@ -23,6 +23,7 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job.reviews.build
+    @reviews = Review.find_by_job_id(params[:id])
   end
 
   def edit

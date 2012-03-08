@@ -1,5 +1,9 @@
 .wrapper
   .main-content
+    h1 Search for a job
+    = image_tag "../img/form.gif"
+    h1 Current Jobs
+    .woo = image_tag "../img/box.png"
     - @jobs.each do |job|
       .block
         .title = "#{job.name} @ "

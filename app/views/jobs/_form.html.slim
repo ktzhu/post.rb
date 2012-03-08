@@ -5,37 +5,54 @@
       - @job.errors.full_messages.each do |msg|
         li = msg
 	
-  fieldset#newJob
-    .field
-      = f.label :job_title
-      = f.text_field :name
+  .field
+    = f.label :job_title
+    = f.text_field :name
 
-    .field
-      = f.label :company
-      = f.text_field :company
+  .field
+    = f.label :company
+    = f.text_field :company
+  
+  p
+  p
+  p
+  .submission
 
-    .field
+    h3 SUBMIT A REVIEW FOR THIS JOB:
+
+    .field#review
       = f.fields_for :reviews do |builder|
         = builder.label :rating
         = builder.text_field :rating
+        p
 
         = builder.label :start
         = builder.text_field :start
+        p
 
         = builder.label :end
         = builder.text_field :end
+        p
 
         = builder.label :atmosphere
+        p
         = builder.text_area :atmosphere, :rows => 4
+        p
 
         = builder.label :skills
+        p
         = builder.text_area :skills, :rows => 4
+        p
 
         = builder.label :duties
+        p
         = builder.text_area :duties, :rows => 4
+        p
 
         = builder.label :eval
+        p
         = builder.text_area :eval, :rows => 4
+        p
 
-    .actions
-      = f.submit
+  .actions
+    = f.submit

@@ -1,22 +1,23 @@
 - if flash[:alert]
 	= flash[:alert]
 
-h1 VIP for VIP
-h2 Please log in.
+.wrapper
+  .main-content
+    h1 Oops, you can't Post yet!
+    h2 Please log in.
 
-= form_tag do
-	fieldset
-		.field
-			label Name:
-			p
-			= text_field_tag :name, params[:name]
-		p
+    = form_tag do
+                  .field
+                          label Name:
+                          p
+                          = text_field_tag :name, params[:name]
+                  p
 
-		.field
-			label Password:
-			p
-			= password_field_tag :password, params[:password]
-		p
+                  .field
+                          label Password:
+                          p
+                          = password_field_tag :password, params[:password]
+                  p
 
-		.actions
-			= submit_tag "Login"
+                  .actions
+                          = submit_tag "Login"

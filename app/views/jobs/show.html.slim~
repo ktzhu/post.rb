@@ -11,12 +11,17 @@
     h2 Reviews
 
     .box
-      em What people are saying:
-      .excerpt
-        - @job.reviews.each do |review|
-          em = "#{review.eval}"
+      em = @job.reviews.atmosphere
 
-    h2 Submit a Review!
+    em = @job.name
+    em = @job.company
+    em = @job.reviews.count
+
+    h2 Reviews
+    - @job.reviews.each do |review|
+      = review.rating
+      = review.eval
+
     = form_for [@job, @new_review] do |f|
       .field
         = f.label :rating
@@ -27,22 +32,17 @@
       .field
         = f.label :end_date
         = f.text_field :end
-      p
       .field
         = f.label :atmosphere
-        p
-        = f.text_area(:atmosphere, :size => "40x3")
+        = f.text_area(:atmosphere, :size => "20x3")
       .field
         = f.label :skills
-        p
-        = f.text_area(:skills, :size => "40x3")
+        = f.text_area(:skills, :size => "20x3")
       .field
         = f.label :duties
-        p
-        = f.text_area(:duties, :size => "40x3")
+        = f.text_area(:duties, :size => "20x3")
       .field
         = f.label :eval
-        p
-        = f.text_area(:eval, :size => "40x10")
+        = f.text_area(:eval, :size => "20x10")
       .actions
         = f.submit

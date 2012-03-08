@@ -91,6 +91,12 @@
   }
 }
 
+.submission {
+  margin-top: 20px;
+  border-top: 1px dotted $darkgrey;
+  width: 400px;
+}
+
 .title {
   display: inline;
   font-family: $serif-font;
@@ -112,6 +118,16 @@
   font-family: $sans_font;
   text-transform: uppercase;
   size: 0.8em;
+}
+
+.woo {
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  img {
+    height: 310px;
+  }
+  left: -82px;
 }
 
 .block {

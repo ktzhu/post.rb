@@ -194,6 +194,13 @@ body {
 }
 
 /* line 94, ../../sass/index.scss */
+.submission {
+  margin-top: 20px;
+  border-top: 1px dotted #4c4642;
+  width: 400px;
+}
+
+/* line 100, ../../sass/index.scss */
 .title {
   display: inline;
   font-family: "Arvo", serif;
@@ -202,18 +209,18 @@ body {
   font-weight: bold;
 }
 
-/* line 102, ../../sass/index.scss */
+/* line 108, ../../sass/index.scss */
 .rating {
   position: relative;
   top: 5px;
   display: inline-block;
 }
-/* line 103, ../../sass/index.scss */
+/* line 109, ../../sass/index.scss */
 .rating img {
   width: 77px;
 }
 
-/* line 109, ../../sass/index.scss */
+/* line 115, ../../sass/index.scss */
 .company {
   size: 1.2em;
   display: inline;
@@ -222,19 +229,31 @@ body {
   size: 0.8em;
 }
 
-/* line 117, ../../sass/index.scss */
+/* line 123, ../../sass/index.scss */
+.woo {
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  left: -82px;
+}
+/* line 127, ../../sass/index.scss */
+.woo img {
+  height: 310px;
+}
+
+/* line 133, ../../sass/index.scss */
 .block {
   display: block;
   margin-bottom: 20px;
 }
-/* line 120, ../../sass/index.scss */
+/* line 136, ../../sass/index.scss */
 .block .title {
   display: inline;
   font-family: "Arvo", serif;
   text-transform: lowercase;
   font-size: 1.6em;
 }
-/* line 127, ../../sass/index.scss */
+/* line 143, ../../sass/index.scss */
 .block .company {
   size: 1em;
   display: inline;
@@ -243,24 +262,24 @@ body {
   size: 0.8em;
 }
 
-/* line 136, ../../sass/index.scss */
+/* line 152, ../../sass/index.scss */
 h1 {
   font-family: "Arvo", serif;
   text-transform: lowercase;
 }
 
-/* line 141, ../../sass/index.scss */
+/* line 157, ../../sass/index.scss */
 h2 {
   font-family: "Cutive", serif;
 }
 
-/* line 145, ../../sass/index.scss */
+/* line 161, ../../sass/index.scss */
 h3 {
   font-family: "Lato", sans-serif;
   size: 1.2em;
 }
 
-/* line 150, ../../sass/index.scss */
+/* line 166, ../../sass/index.scss */
 .wrapper {
   display: block;
   position: relative;
