@@ -1,0 +1,155 @@
+@import 'header';
+
+.main-content {
+  display: block;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  width: 80%;
+  font-family: $sans-font;
+  font-size: 0.9em;
+  color: $darkgrey;
+}
+
+.small-button2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: $darkgrey;
+  width: 210px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  @include border-radius(5px); 
+  @include single-box-shadow;
+  padding-top: 1px;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.small-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: $darkgrey;
+  width: 120px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  @include border-radius(5px); 
+  @include single-box-shadow;
+  padding-top: 1px;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.content {
+  display: block;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 300px;
+  font-family: $sans-font;
+  font-size: 0.9em;
+  color: $darkgrey;
+
+  .blurb {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: $gotogrey;
+    span {
+      color: $darkgreen;
+      text-transform: uppercase;
+      size: 1.2em;
+    }
+  }
+
+  .actions {
+    padding-left: 20px;
+    .button {
+      display: block;
+      height: 23px;
+      width: 65%;
+      margin-bottom: 5px;
+      background: $darkgreen;
+      @include border-radius(5px); 
+      @include single-box-shadow;
+      text-align: center;
+      padding-top: 7px;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.title {
+  display: inline;
+  font-family: $serif-font;
+  text-transform: lowercase;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.rating {
+  img { width: 77px; }
+  position: relative;
+  top: 5px;
+  display: inline-block;
+}
+
+.company {
+  size: 1.2em;
+  display: inline;
+  font-family: $sans_font;
+  text-transform: uppercase;
+  size: 0.8em;
+}
+
+.block {
+  display: block;
+  margin-bottom: 20px;
+  .title {
+    display: inline;
+    font-family: $serif-font;
+    text-transform: lowercase;
+    font-size: 1.6em;
+  }
+
+  .company {
+    size: 1em;
+    display: inline;
+    font-family: $sans_font;
+    text-transform: uppercase;
+    size: 0.8em;
+  }
+}
+
+h1 {
+  font-family: $serif-font;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-family: $second_serif_font;
+}
+
+h3 {
+  font-family: $sans-font;
+  size: 1.2em;
+}
+
+.wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+}

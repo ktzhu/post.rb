@@ -1,22 +1,23 @@
-h1 Welcome ADMIN
-	! You have logged in.
-p
+.wrapper
+  .main-content
+    h1 Welcome, Karlyn! You have logged in.
+    p
 
-- if notice
-	= notice
+    - if notice
+      = notice
 
-= link_to "Add job", new_job_path
-'  |
-= link_to "Add user", new_user_path
+    = link_to "Add job", new_job_path
+    '  |
+    = link_to "Add user", new_user_path
 
-h2 Current jobs!
+    h2 Current jobs!
 
-- if @jobs.count > 0
-  - @jobs.each do |job|
-    .label
-      = job.name
-      = job.company
-    .actions
-      = link_to "Show", job
-      = link_to "Edit", edit_job_path(job)
-      = button_to "Delete this job", job, :confirm => "No fo realz?", :method => :delete, :class => :destroy
+    - if @jobs.count > 0
+      - @jobs.each do |job|
+        .label
+          = job.name
+          = job.company
+        .actions
+          = link_to "Show", job
+          = link_to "Edit", edit_job_path(job)
+          = button_to "Delete this job", job, :confirm => "No fo realz?", :method => :delete, :class => :destroy

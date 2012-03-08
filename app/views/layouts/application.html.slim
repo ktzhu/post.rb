@@ -3,7 +3,10 @@ html lang="en"
   head
     meta http-equiv="Content Type" content="text/html, charset=utf8"
     title Post
-    link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic|Cutive' rel='stylesheet' type='text/css'
+    link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic|Cutive|Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'
+    = stylesheet_link_tag 'index.css' 
+    = javascript_include_tag '../js/jquery.min.js'
+    = javascript_include_tag '../js/application.js'
 
 
   = csrf_meta_tag

@@ -1,0 +1,269 @@
+/* line 45, ../../sass/_base.scss */
+* {
+  clear: both;
+}
+
+/* line 47, ../../sass/_base.scss */
+body {
+  background: url(../img/bkgrd.gif) repeat-y center;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* line 4, ../../sass/_header.scss */
+.nav {
+  display: block;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 35px;
+  font-family: "Lato", sans-serif;
+  color: #363636;
+  background: black;
+  font-size: 1em;
+}
+/* line 15, ../../sass/_header.scss */
+.nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 20, ../../sass/_header.scss */
+.nav ul {
+  display: inline-block;
+  padding: 0px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+/* line 26, ../../sass/_header.scss */
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  height: 25px;
+  margin-right: 25px;
+  padding-top: 8px;
+}
+/* line 36, ../../sass/_header.scss */
+.nav .account {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 25px;
+  background: black;
+  left: 69%;
+  text-align: center;
+}
+/* line 46, ../../sass/_header.scss */
+.nav .branding {
+  float: left;
+  margin-top: 2px;
+  font-size: 1.8em;
+  font-family: "Arvo", serif;
+  text-transform: lowercase;
+  display: inline-block;
+  float: left;
+  text-indent: 10px;
+  color: #2a7357;
+}
+
+/* line 3, ../../sass/index.scss */
+.main-content {
+  display: block;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9em;
+  color: #4c4642;
+}
+
+/* line 14, ../../sass/index.scss */
+.small-button2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #4c4642;
+  width: 210px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  padding-top: 1px;
+  text-align: center;
+}
+/* line 27, ../../sass/index.scss */
+.small-button2 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 33, ../../sass/index.scss */
+.small-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #4c4642;
+  width: 120px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 17px;
+  width: 45px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  padding-top: 1px;
+  text-align: center;
+}
+/* line 46, ../../sass/index.scss */
+.small-button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 52, ../../sass/index.scss */
+.content {
+  display: block;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  width: 300px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9em;
+  color: #4c4642;
+}
+/* line 62, ../../sass/index.scss */
+.content .blurb {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #363636;
+}
+/* line 66, ../../sass/index.scss */
+.content .blurb span {
+  color: #2a7357;
+  text-transform: uppercase;
+  size: 1.2em;
+}
+/* line 73, ../../sass/index.scss */
+.content .actions {
+  padding-left: 20px;
+}
+/* line 75, ../../sass/index.scss */
+.content .actions .button {
+  display: block;
+  height: 23px;
+  width: 65%;
+  margin-bottom: 5px;
+  background: #2a7357;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  text-align: center;
+  padding-top: 7px;
+}
+/* line 85, ../../sass/index.scss */
+.content .actions .button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 94, ../../sass/index.scss */
+.title {
+  display: inline;
+  font-family: "Arvo", serif;
+  text-transform: lowercase;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* line 102, ../../sass/index.scss */
+.rating {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+}
+/* line 103, ../../sass/index.scss */
+.rating img {
+  width: 77px;
+}
+
+/* line 109, ../../sass/index.scss */
+.company {
+  size: 1.2em;
+  display: inline;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  size: 0.8em;
+}
+
+/* line 117, ../../sass/index.scss */
+.block {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 120, ../../sass/index.scss */
+.block .title {
+  display: inline;
+  font-family: "Arvo", serif;
+  text-transform: lowercase;
+  font-size: 1.6em;
+}
+/* line 127, ../../sass/index.scss */
+.block .company {
+  size: 1em;
+  display: inline;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  size: 0.8em;
+}
+
+/* line 136, ../../sass/index.scss */
+h1 {
+  font-family: "Arvo", serif;
+  text-transform: lowercase;
+}
+
+/* line 141, ../../sass/index.scss */
+h2 {
+  font-family: "Cutive", serif;
+}
+
+/* line 145, ../../sass/index.scss */
+h3 {
+  font-family: "Lato", sans-serif;
+  size: 1.2em;
+}
+
+/* line 150, ../../sass/index.scss */
+.wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+}

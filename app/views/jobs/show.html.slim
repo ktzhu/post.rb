@@ -1,38 +1,45 @@
-h1 That shit cray
-h2 = "Job Details for #{@job.name} at #{@job.company}"
-- if notice
-	= notice
+.wrapper
+  .main-content
+    h2 Job Details
+    .title = "#{@job.name} @ "
+    .company = @job.company
+    .rating = image_tag "../img/stars.gif"
+    - if notice
+            = notice
+    p
 
-em = @job.name
-em = @job.company
-em = @job.reviews.count
+    h2 Reviews
 
-h2 Reviews
-- @job.reviews.each do |review|
-  = review.rating
-  = review.eval
+    em = @job.name
+    em = @job.company
+    em = @job.reviews.count
 
-= form_for [@job, @new_review] do |f|
-  .field
-    = f.label :rating
-    = f.text_field :rating
-  .field
-    = f.label :start_date
-    = f.text_field :start
-  .field
-    = f.label :end_date
-    = f.text_field :end
-  .field
-    = f.label :atmosphere
-    = f.text_area(:atmosphere, :size => "20x3")
-  .field
-    = f.label :skills
-    = f.text_area(:skills, :size => "20x3")
-  .field
-    = f.label :duties
-    = f.text_area(:duties, :size => "20x3")
-  .field
-    = f.label :eval
-    = f.text_area(:eval, :size => "20x10")
-  .actions
-    = f.submit
+    h2 Reviews
+    - @job.reviews.each do |review|
+      = review.rating
+      = review.eval
+
+    = form_for [@job, @new_review] do |f|
+      .field
+        = f.label :rating
+        = f.text_field :rating
+      .field
+        = f.label :start_date
+        = f.text_field :start
+      .field
+        = f.label :end_date
+        = f.text_field :end
+      .field
+        = f.label :atmosphere
+        = f.text_area(:atmosphere, :size => "20x3")
+      .field
+        = f.label :skills
+        = f.text_area(:skills, :size => "20x3")
+      .field
+        = f.label :duties
+        = f.text_area(:duties, :size => "20x3")
+      .field
+        = f.label :eval
+        = f.text_area(:eval, :size => "20x10")
+      .actions
+        = f.submit

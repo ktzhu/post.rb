@@ -1,9 +1,9 @@
-h1 Let's rap.
-h3 Put this in your pipe
-em and smoke it
-
-- @jobs.each do |job|
-  h2 = job.name
-  = link_to "Show", job
-a href="/login" Login
-/ = button_to "Add Review", reviews_path(:job_id => job)
+.wrapper
+  .main-content
+    - @jobs.each do |job|
+      .block
+        .title = "#{job.name} @ "
+        .company = job.company
+        .small-button = link_to "view", job
+        .details This job has #{job.reviews.count} reviews!
+    / = button_to "Add Review", reviews_path(:job_id => job)
